@@ -4,7 +4,7 @@ This is a plugin to generate SQL from migrations.
 
 It achieves this by monkey patching the definitions of ActiveRecord::Base.connection.execute and other  related methods.
 
-It has only been tested with the sqlserver adapter.  If you test it with another adapter and it works, please let me know!
+It has only been tested with the sqlserver and mysql adapters (see limitations).  If you test it with another adapter and it works, please let me know!
 
 == Installation
 
@@ -16,7 +16,9 @@ rake db:generate:migration_sql
 
 == Known limits
 
-* Will fail on migrations that perform CRUD via ActiveRecord methods
+* May fail on migrations that perform CRUD via ActiveRecord methods
+* With the mysql adapter, fails on change_column, rename_column
+* Fails on redhillonrails_core plugin with the most adapters
 
 == Credits
 
