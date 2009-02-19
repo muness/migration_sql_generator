@@ -1,0 +1,1 @@
+require 'migration_sql_generator/generator'
