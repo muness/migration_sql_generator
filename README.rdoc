@@ -4,13 +4,11 @@ This is a plugin to generate SQL from migrations.
 
 It achieves this by monkey patching the definitions of ActiveRecord::Base.connection.execute and other  related methods.
 
-It has only been tested with the sqlserver adapter.
+It has only been tested with the sqlserver adapter.  If you test it with another adapter and it works, please let me know!
 
 == Installation
 
-TODO: set up a github repo for this
-
-script/plugin install git:git@github.com:/relevance/migration_sql_generator
+script/plugin install git://github.com/muness/migration_sql_generator.git
 
 == Usage
 
