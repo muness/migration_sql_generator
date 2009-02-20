@@ -1,6 +1,6 @@
 = Migration SQL Generator
 
-This is a plugin to generate SQL from migrations.  
+This is a Rails plugin to generate SQL from migrations.  
 
 It achieves this by monkey patching the definitions of ActiveRecord::Base.connection.execute and other  related methods.
 
