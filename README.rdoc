@@ -24,7 +24,7 @@ rake db:generate:migration_sql
 
 * Muness Alrubaie, Relevance Inc.
 
-Shout out to Jay Field for the original code this plugin grew out of: http://blog.jayfields.com/2006/11/rails-generate-sql-from-migrations.html
+Shout out to Jay Fields for the original code this plugin grew out of: http://blog.jayfields.com/2006/11/rails-generate-sql-from-migrations.html
 
 == License
 
