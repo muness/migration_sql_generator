@@ -50,8 +50,13 @@ module MigrationSqlGenerator
         migration = MigrationSqlGenerator::Migration.new(file)
         MigrationSqlGenerator::Writer.file_name = "#{migration}.sql"
         migration.up
-        MigrationSqlGenerator::Writer.file_name = "#{migration}_down.sql"
-        migration.down
+
+        begin
+          MigrationSqlGenerator::Writer.file_name = "#{migration}_down.sql"
+          migration.down
+        rescue ActiveRecord::IrreversibleMigration
+
+        end
       end
     end
   end
